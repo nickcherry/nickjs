@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'geist';
+  src: url('/font/geist-sans/light.woff2') format('woff2'),
+    url('/font/geist-sans/light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'geist-mono';
+  src: url('/font/geist-mono/light.woff2') format('woff2'),
+    url('/font/geist-mono/light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  body,
+  input,
+  textarea {
+    color: #171515;
+    font-family: geist;
+  }
+
+  html,
+  body {
+    background: #fffcfa;
+    scrollbar-gutter: stable both-edges;
+  }
+
+  form {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  a {
+    color: #ed5a6c;
+  }
+
+  nav a {
+    color: #171515;
+  }
+
+  code {
+    background-color: #feebe7;
+    font-family: geist-mono;
+    font-size: 0.92em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    white-space: pre-wrap;
+  }
+}
+
+@layer components {
+  /* */
+}

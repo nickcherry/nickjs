@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "./lib",
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "ESNext"],
+    "module": "esnext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noEmit": false,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "./lib",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "types": ["bun-types"],
+    "baseUrl": ".",
+    "paths": {
+      "@client/*": ["src/client/*"],
+      "@server/*": ["src/server/*"],
+      "@shared/*": ["src/shared/*"],
+      "@ssr/*": ["src/ssr/*"]
+    }
+  },
+  "include": ["./src/**/*", "src/server/controller/.home.tsx"],
+  "exclude": ["node_modules", "lib", "src/**/__bootstrap.*"]
+}
