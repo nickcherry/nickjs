@@ -50,7 +50,7 @@ ESlint rules are configured to prevent client code from importing any Bun/Node p
 
 ## Server
 
-The server is configured in `@server/server.tsx`. By default, Nick.js enables [ElysiaJS plugins](https://elysiajs.com/plugins/overview.html) for authentication, Tailwind styles, error handling, compression, [rate limiting](https://github.com/rayriffy/elysia-rate-limit) [securing http response headers](https://github.com/DevTobias/elysia-helmet), [serving static files/folders](https://elysiajs.com/plugins/static.html), and [adding request ids](https://github.com/gtramontina/elysia-requestid). It's recommended to use ElysiaJS [schemas](https://elysiajs.com/concept/schema.html) to type and validate request inputs (e.g. path params, search params, body). Follow the patterns in `@shared/type/controller` to define schema validations for ElysiaJS and derive types that can be passed into `ControllerProps`.
+The server is configured in `@server/server.tsx`. By default, Nick.js enables [ElysiaJS plugins](https://elysiajs.com/plugins/overview.html) for authentication, Tailwind styles, error handling, compression, [rate limiting](https://github.com/rayriffy/elysia-rate-limit), [securing http response headers](https://github.com/DevTobias/elysia-helmet), [serving static files/folders](https://elysiajs.com/plugins/static.html), and [adding request ids](https://github.com/gtramontina/elysia-requestid). It's recommended to use ElysiaJS [schemas](https://elysiajs.com/concept/schema.html) to type and validate request inputs (e.g. path params, search params, body). Follow the patterns in `@shared/type/controller` to define schema validations for ElysiaJS and derive types that can be passed into `ControllerProps`.
 
 ## Database
 

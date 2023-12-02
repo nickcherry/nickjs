@@ -22,7 +22,8 @@
     "migrate:reset": "bun run src/server/bin/migrate/reset.ts",
     "serve": "bun src/server/bin/serve.ts",
     "test": "bun test src",
-    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit",
+    "tailwindcss": "^3.3.5"
   },
   "devDependencies": {
     "@total-typescript/ts-reset": "^0.5.1",
@@ -48,7 +49,6 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "kysely-codegen": "^0.11.0",
-    "tailwindcss": "^3.3.5",
     "terminate": "^2.6.1",
     "tsc-watch": "^6.0.4",
     "type-fest": "^4.7.1"

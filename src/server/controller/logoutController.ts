@@ -1,4 +1,4 @@
-import { logoutOauthUser } from '@server/operation/logoutOauthUser';
+import { logoutOauthUser } from '@server/operation/auth/logoutOauthUser';
 import { getSessionCookie } from '@server/util/controller/getSessionCookie';
 import { pageController } from '@server/util/controller/pageController';
 

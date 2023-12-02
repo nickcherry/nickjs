@@ -1,4 +1,4 @@
-import { findSessionUser } from '@server/operation/findSessionUser';
+import { findSessionUser } from '@server/operation/auth/findSessionUser';
 import { SessionCookieValue } from '@shared/type/controller/auth';
 import { User } from '@shared/type/model/user';
 import Elysia from 'elysia';

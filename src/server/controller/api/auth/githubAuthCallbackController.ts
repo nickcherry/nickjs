@@ -1,5 +1,5 @@
 import { githubClientId, githubSecret } from '@server/constant/env';
-import { loginOauthUser } from '@server/operation/loginOauthUser';
+import { loginOauthUser } from '@server/operation/auth/loginOauthUser';
 import { getSessionCookie } from '@server/util/controller/getSessionCookie';
 import { GithubAuthCallbackSchema } from '@shared/type/controller/auth';
 import { ControllerProps } from '@shared/type/controller/common';
