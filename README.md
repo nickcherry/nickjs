@@ -1,8 +1,22 @@
 # Nick.js
+
 Nick.js is a lightweight web framework (glorified starter project, really) built with [Bun](https://bun.sh/), [ElysiaJS](https://elysiajs.com), [Kysely](https://github.com/kysely-org/kysely), [React](https://react.dev), and [Tailwind](https://tailwindcss.com/). It is designed to be type-safe, performant, easy to use, and flexible.
 
+**It is is *very* beta software, mostly intended for personal use. Exercise caution if using for any serious project.**
+
+## Installation
+
+To create a new Nick.js project:
+
+```shell
+bun create nickjs
+```
+
+Be sure to verify that you get the latest version of Nick.js (i.e. the `version` in `package.json`). There is currently [a Bun bug](https://github.com/oven-sh/bun/issues/4989) that results in `bunx` using stale versions of packages.
+
 ## SSR
- Nick.js supports basic server-side rendering + hydration. Each incoming page request is routed to a controller (i.e. an async function), which is responsible for retrieving any data the page needs, then returning a React element. The server's initial response will include only the rendered HTML plus two `script` tags - one to load React (typically already in the browser cache) and one to load javascript that responsible for hydrating the current page.
+
+Nick.js supports basic server-side rendering + hydration. Each incoming page request is routed to a controller (i.e. an async function), which is responsible for retrieving any data the page needs, then returning a React element. The server's initial response will include only the rendered HTML plus two `script` tags - one to load React (typically already in the browser cache) and one to load javascript that responsible for hydrating the current page.
 
 There is one piece of magic required to make SSR and hydration work: Each React element returned by a controller must passed through `@ssr/app/clientRoot`. At build time, a custom [Bun plugin](https://bun.sh/docs/bundler/plugins) will replace this function call with code that renders the given component to an html string and appends scripts to hydrate the page.
 
