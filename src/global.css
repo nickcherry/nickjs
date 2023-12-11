@@ -28,7 +28,10 @@
 
   html,
   body {
+    @apply subpixel-antialiased;
     background: #fffcfa;
+    font-feature-settings: 'calt' 0;
+    -webkit-font-feature-settings: 'calt' 0;
     scrollbar-gutter: stable both-edges;
   }
 
