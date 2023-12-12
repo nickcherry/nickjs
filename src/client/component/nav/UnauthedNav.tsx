@@ -1,13 +1,15 @@
+import { NavLink } from './NavLink';
+
 function UnauthedNav() {
   return (
     <>
       <div className="flex flex-row gap-6">
-        <a title="Home" href="/">
+        <NavLink title="Home" href="/">
           Home
-        </a>
+        </NavLink>
       </div>
       <div>
-        <a href="/login">Login</a>
+        <NavLink href="/login">Login</NavLink>
       </div>
     </>
   );

@@ -7,7 +7,7 @@ function Nav() {
   const { currentUser } = usePage();
 
   return (
-    <nav className="container relative mx-auto flex min-h-[64px] max-w-[960px] flex-row items-center justify-between px-4 text-sm font-medium">
+    <nav className="container relative mx-auto flex min-h-[64px] max-w-[960px] flex-row items-center justify-between px-4">
       {currentUser ? <AuthedNav /> : <UnauthedNav />}
     </nav>
   );

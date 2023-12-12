@@ -3,6 +3,8 @@ import { useAuthedPage } from '@client/context/PageProvider';
 import cn from 'classnames';
 import { useState } from 'react';
 
+import { NavLink } from './NavLink';
+
 function AuthedNav() {
   const { currentUser } = useAuthedPage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +12,12 @@ function AuthedNav() {
   return (
     <>
       <div className="flex flex-row gap-6">
-        <a title="Home" href="/">
+        <NavLink title="Home" href="/">
           Home
-        </a>
-        <a title="Users" href="/users">
+        </NavLink>
+        <NavLink title="Users" href="/users">
           Users
-        </a>
+        </NavLink>
       </div>
       <div className="flex flex-row items-center">
         <Avatar
