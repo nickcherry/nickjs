@@ -8,7 +8,7 @@ function UserPage({ user }: PageProps<{ user: User }>) {
     <Page title={user.name}>
       <div className="flex flex-row items-center gap-2">
         <Avatar url={user.avatarUrl} />
-        <span className="font-bold">{user.name}</span>
+        <span className="font-medium">{user.name}</span>
       </div>
     </Page>
   );

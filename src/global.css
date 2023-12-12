@@ -6,8 +6,16 @@
   font-family: 'geist';
   src: url('/font/geist-sans/light.woff2') format('woff2'),
     url('/font/geist-sans/light.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'geist';
+  src: url('/font/geist-sans/medium.woff2') format('woff2'),
+    url('/font/geist-sans/medium.woff') format('woff');
+  font-weight: 500;
+  font-style: medium;
 }
 
 @font-face {
@@ -19,13 +27,6 @@
 }
 
 @layer base {
-  body,
-  input,
-  textarea {
-    color: #171515;
-    font-family: geist;
-  }
-
   html,
   body {
     @apply subpixel-antialiased;
@@ -33,6 +34,14 @@
     font-feature-settings: 'calt' 0;
     -webkit-font-feature-settings: 'calt' 0;
     scrollbar-gutter: stable both-edges;
+  }
+
+  body,
+  input,
+  textarea {
+    color: #171515;
+    font-family: geist;
+    font-weight: 300;
   }
 
   form {

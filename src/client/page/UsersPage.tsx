@@ -8,7 +8,7 @@ function UsersPage({
 }: PageProps<{ totalUserCount: number; users: User[] }>) {
   return (
     <Page title="Users">
-      <div className="font-bold">Total Users: {totalUserCount}</div>
+      <div className="font-medium">Total Users: {totalUserCount}</div>
       <hr className="my-2" />
       <div>
         {users.map((user) => (

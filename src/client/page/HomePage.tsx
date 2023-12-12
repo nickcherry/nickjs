@@ -6,7 +6,7 @@ function Section({ children }: { children: ReactNode }) {
 }
 
 function Heading({ children }: { children: ReactNode }) {
-  return <h2 className="mb-2 text-xl font-bold">{children}</h2>;
+  return <h2 className="mb-2 text-xl font-medium">{children}</h2>;
 }
 
 function Paragraph({ children }: { children: ReactNode }) {
