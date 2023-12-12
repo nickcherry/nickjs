@@ -15,7 +15,7 @@ function Paragraph({ children }: { children: ReactNode }) {
 
 function HomePage() {
   return (
-    <Page title="Home" className="min-h-[1500px]">
+    <Page title="Nick.js" className="min-h-[1500px]">
       <Section>
         <Heading>Overview</Heading>
         <Paragraph>
