@@ -1,6 +1,6 @@
 {
   "name": "create-nickjs",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "type": "module",
   "license": "MIT",
   "author": "Nick Cherry",
@@ -10,7 +10,7 @@
   },
   "main": "src/cli/index.ts",
   "bin": {
-    "create-nick": "src/cli/index.ts"
+    "create-nickjs": "src/cli/index.ts"
   },
   "scripts": {
     "clean:bootstrap-artifacts": "bun run src/server/bin/clean/bootstrapArtifacts.ts",
